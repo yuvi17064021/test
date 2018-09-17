@@ -10,48 +10,37 @@
   <link href="test.css" type="text/css" rel="stylesheet"
 </head>
 <body>
-    <div class="b"><div id="demo"></div></div><br>
     <div class="tyui">
-      <div class="a"><p class="tyui signout"><a href="#">SignOut</a></p></div>
-      <div class="b"><h2 class="tyui team">Team Name</h2></div>
-    </div><br>
-<br>
-  <div class="header">
-    <div id="tog1" class="container" onclick="myFunction6()">
-  <div class="bar1"><h2 class="ghjk">Questions</h2></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-  </div>
-  <div id="tog" class="container" onclick="myFunction5()">
-  <div class="changebar1"><h2 class="ghjk">Questions</h2></div>
-  <div class="changebar2"></div>
-  <div class="changebar3"></div>
-  </div>
-    <div id="myidname" class="head same container">
-      <ul>
-        <li onclick="myFunction1()"><a href="#">1</a></li>
-        <li onclick="myFunction2()"><a href="#">2</a></li>
-        <li onclick="myFunction2()"><a href="#">3</a></li>
-        <li onclick="myFunction2()"><a href="#">4</a></li>
-        <li onclick="myFunction2()"><a href="#">5</a></li>
-        <li onclick="myFunction2()"><a href="#">6</a></li>
-        <li onclick="myFunction2()"><a href="#">7</a></li>
-        <li onclick="myFunction2()"><a href="#">8</a></li>
-        <li onclick="myFunction2()"><a href="#">9</a></li>
-        <li onclick="myFunction2()"><a href="#">10</a></li>
-        <li onclick="myFunction2()"><a href="#">11</a></li>
-        <li onclick="myFunction2()"><a href="#">12</a></li>
-        <li onclick="myFunction2()"><a href="#">13</a></li>
-        <li onclick="myFunction2()"><a href="#">14</a></li>
-        <li onclick="myFunction2()"><a href="#">15</a></li>
-        <li onclick="myFunction2()"><a href="#">16</a></li>
-        <li onclick="myFunction2()"><a href="#">17</a></li>
-        <li onclick="myFunction2()"><a href="#">18</a></li>
-        <li onclick="myFunction2()"><a href="#">19</a></li>
-        <li onclick="myFunction()"><a href="#">20</a></li>
-      </ul>
+      <div class="a"><span style="font-size:1.875rem;cursor:pointer;float:left;" onclick="openNav()">&#9776; Questions</span><p class="tyui signout"><a href="#">SignOut</a></p></div>
     </div>
-  </div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul>
+    <li onclick="myFunction1()"><a href="#">1</a></li>
+    <li onclick="myFunction2()"><a href="#">2</a></li>
+    <li onclick="myFunction2()"><a href="#">3</a></li>
+    <li onclick="myFunction2()"><a href="#">4</a></li>
+    <li onclick="myFunction2()"><a href="#">5</a></li>
+    <li onclick="myFunction2()"><a href="#">6</a></li>
+    <li onclick="myFunction2()"><a href="#">7</a></li>
+    <li onclick="myFunction2()"><a href="#">8</a></li>
+    <li onclick="myFunction2()"><a href="#">9</a></li>
+    <li onclick="myFunction2()"><a href="#">10</a></li>
+    <li onclick="myFunction2()"><a href="#">11</a></li>
+    <li onclick="myFunction2()"><a href="#">12</a></li>
+    <li onclick="myFunction2()"><a href="#">13</a></li>
+    <li onclick="myFunction2()"><a href="#">14</a></li>
+    <li onclick="myFunction2()"><a href="#">15</a></li>
+    <li onclick="myFunction2()"><a href="#">16</a></li>
+    <li onclick="myFunction2()"><a href="#">17</a></li>
+    <li onclick="myFunction2()"><a href="#">18</a></li>
+    <li onclick="myFunction2()"><a href="#">19</a></li>
+    <li onclick="myFunction()"><a href="#">20</a></li>
+    <li onclick="myFunction()"><a href="#">20</a></li>
+  </ul>
+</div>
+<br><br>
+<div class="b"><div id="demo"></div></div><br>
   <div id="asdf">
   <div class="main1">
     <br>
@@ -121,17 +110,12 @@ function myFunction4() {
   document.getElementById("middle").style.display='none';
   document.getElementById("last").style.display='inline';
 }
-
-function myFunction5() {
-    document.getElementById("myidname").style.display='none';
-    document.getElementById("tog1").style.display='inline';
-    document.getElementById("tog").style.display='none';
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100px";
 }
 
-function myFunction6() {
-    document.getElementById("myidname").style.display='inline';
-    document.getElementById("tog").style.display='inline';
-    document.getElementById("tog1").style.display='none';
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 
 // Set the date we're counting down to
