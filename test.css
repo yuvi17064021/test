@@ -1,0 +1,169 @@
+html, body{
+  background: url(./bg.jpg)  no-repeat center center;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.header{
+  height: auto;
+  box-shadow:  0 0 15px 0 black;
+  background-color: white;
+  width: 100%;
+}
+
+.header ul li{
+  display: inline-block;
+  line-height: 400%;
+  font-size: 1em;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+
+
+.signout{
+  position:inherit;
+  align-items: center;
+  padding-left: 70%;
+  position: static;
+}
+#demo{
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: 100px;
+  display: inline-block;
+  line-height: 400%;
+  font-size: 1em;
+  font-weight: 800;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+#demo:hover{
+  box-shadow: 0 0 0 0;
+}
+.clock{
+position: center;
+}
+
+a{
+  color: black;
+}
+
+.header ul li:hover{
+  background-color: white;
+  box-shadow: 0 0 15px 0 black;
+}
+
+.header ul li a:hover{
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+  color: #1565C0;
+  text-decoration: none;
+}
+
+.navbar-inverse{
+    background-color: white;
+    display: none;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    height: 35px;
+}
+
+.ghjk{
+  padding-left: 40px;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+.main{
+  text-align: center;
+  height: auto;
+  box-shadow:  0 0 15px 0 black;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: white;
+}
+
+.main1{
+  text-align: center;
+  height: auto;
+  box-shadow:  0 0 15px 0 black;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  background-color: white;
+}
+p{
+  margin: 40px;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+}
+
+.share {
+  position: relative;
+  text-align: center;
+}
+
+.share a {
+  background: white;
+  border: 1px solid #55acee;
+  border-radius: 100px;
+  color: #55acee;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.share a:hover {
+  background: #55acee;
+  border: 1px solid #55acee;
+  color: white;
+}
+#first{
+  display: none;
+}
+#last{
+  display: none;
+}
+#qwer{
+  display: none;
+}
+
+#myidname{
+  display: none;
+}
+#tog{
+  display: none;
+}
+.tyui{
+  display: inline;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar1, .bar2, .bar3, .changebar1, .changebar2, .changebar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.a{
+  text-align: right;
+}
+.b{
+  text-align: center;
+}
