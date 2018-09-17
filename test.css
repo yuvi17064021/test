@@ -2,32 +2,16 @@ html, body{
   background: url(./bg.jpg)  no-repeat center center;
   background-attachment: fixed;
   height: 100%;
+  overflow-x:hidden;
 }
 
-.header{
-  height: auto;
-  box-shadow:  0 0 15px 0 black;
-  background-color: white;
-  width: 100%;
-}
 
-.header ul li{
-  display: inline-block;
-  line-height: 400%;
-  font-size: 1em;
-  font-weight: 800;
-  font-family: 'Raleway', sans-serif;
-  padding: 0 10px;
-  position: relative;
-  text-transform: uppercase;
-}
 
 
 
 .signout{
   position:inherit;
   align-items: center;
-  padding-left: 70%;
   position: static;
 }
 #demo{
@@ -40,7 +24,7 @@ html, body{
   font-size: 1em;
   font-weight: 800;
   font-family: 'Raleway', sans-serif;
-  padding: 0 10px;
+  padding: 0 0.625rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -55,29 +39,17 @@ a{
   color: black;
 }
 
-.header ul li:hover{
-  background-color: white;
-  box-shadow: 0 0 15px 0 black;
-}
-
-.header ul li a:hover{
-  border-bottom: 2px solid;
-  padding-bottom: 10px;
-  color: #1565C0;
-  text-decoration: none;
-}
-
 .navbar-inverse{
     background-color: white;
     display: none;
-    padding: 5px;
+    padding: 0.3145;
     border: none;
     width: 100%;
-    height: 35px;
+    height: 2.1875rem;
 }
 
 .ghjk{
-  padding-left: 40px;
+  padding-left: 2.5rem;
   font-family: 'Raleway', sans-serif;
   text-transform: uppercase;
 }
@@ -101,7 +73,7 @@ a{
   background-color: white;
 }
 p{
-  margin: 40px;
+  margin: 2.5rem;
   font-size: 1em;
   font-weight: 600;
   font-family: 'Raleway', sans-serif;
@@ -141,9 +113,7 @@ p{
 #myidname{
   display: none;
 }
-#tog{
-  display: none;
-}
+
 .tyui{
   display: inline;
 }
@@ -153,17 +123,55 @@ p{
     padding: 10px;
 }
 
-.bar1, .bar2, .bar3, .changebar1, .changebar2, .changebar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
 
 .a{
   text-align: right;
 }
 .b{
   text-align: center;
+}
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
