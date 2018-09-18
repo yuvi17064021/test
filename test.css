@@ -1,6 +1,4 @@
 html, body{
-  background: url(./bg.jpg)  no-repeat center center;
-  background-attachment: fixed;
   height: 100%;
   overflow-x:hidden;
 }
@@ -99,6 +97,26 @@ p{
   border: 1px solid #55acee;
   color: white;
 }
+.sgn{
+  position: relative;
+  text-align: center;
+}
+
+.sgn a {
+  background: white;
+  border: 1px solid black;
+  border-radius: 100px;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.sgn a:hover {
+  background: black;
+  border: 1px solid black;
+  color: white;
+}
+
 #first{
   display: none;
 }
