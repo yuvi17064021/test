@@ -83,9 +83,9 @@ p{
 
 .share a {
   background: white;
-  border: 1px solid #55acee;
+  border: 1px solid black;
   border-radius: 100px;
-  color: #55acee;
+  color: black;
   display: inline-block;
   margin: 10px;
   padding: 14px;
@@ -93,8 +93,8 @@ p{
 }
 
 .share a:hover {
-  background: #55acee;
-  border: 1px solid #55acee;
+  background: black;
+  border: 1px solid black;
   color: white;
 }
 .sgn{
