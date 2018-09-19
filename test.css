@@ -103,10 +103,9 @@ p{
 }
 
 .sgn a {
-  background: white;
-  border: 1px solid black;
+  background: #1565c0;
   border-radius: 100px;
-  color: black;
+  color: white;
   display: inline-block;
   text-decoration: none;
 }
@@ -159,12 +158,13 @@ body {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 13%;
+    top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .sidenav a {
@@ -186,6 +186,9 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+}
+#mySidenav ul{
+  overflow-y:scroll;
 }
 
 .mobile {display: none;}
