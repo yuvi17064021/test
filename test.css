@@ -2,11 +2,29 @@ html, body{
   height: 100%;
   overflow-x:hidden;
 }
+.navbar{
+  background-color:#1565c0;
+  padding: 20px 15px 5px 0;
+}
 
+input[type=checkbox] {
+    zoom: 2;
+}
 
-
-
-
+input{
+  vertical-align: middle;
+}
+.mobile ul{
+  text-align: left;
+  align-items: center;
+  padding-left: 30%;
+}
+.mobile li{
+  display: block;
+}
+.options{
+  font-size: 1.3rem;
+}
 .signout{
   position:inherit;
   align-items: center;
@@ -108,6 +126,7 @@ p{
   color: white;
   display: inline-block;
   text-decoration: none;
+  padding: 5px 6px 10px 10px;
 }
 
 .sgn a:hover {
@@ -196,7 +215,7 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-@media(max-width:535px){
+@media(max-width:725px){
   .laptop {display: none;}
   .mobile {display: inline;}
 }
